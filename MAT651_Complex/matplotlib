@@ -1,0 +1,1533 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "bcff0c0e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "-**Date: 18-01-24**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "63fcb43a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "**LIMIT OF A COMPLEX SEQUENCE**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "860c2939",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from cmath import *\n",
+    "import math\n",
+    "import numpy as np\n",
+    "import sympy as sp\n",
+    "import matplotlib.pyplot as plt\n",
+    "import ipywidgets as widgets\n",
+    "import random"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "22d39cb5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0 = ):"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "332462ac",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0 = 0):"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "8635e624",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0 = 0):\n",
+    "    return"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "481c248a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "z = eval(input(\"Enter list of complex numbers:\"))\n",
+    "def plotComplex(z,show = True):\n",
+    "    f = plt.figure()\n",
+    "    for i in z:\n",
+    "        plt.scatter(i.real,i.imag,label = f\"{i}\")\n",
+    "    plt.legend()\n",
+    "    plt.grid()\n",
+    "    plt.axhline(color = \"black\")\n",
+    "    plt.axvline(color = \"black\")\n",
+    "    plt.xlabel(\"Real\")\n",
+    "    plt.ylabel(\"Imaginary\")\n",
+    "    plt.title(\"Plot of Complex Numbers\")\n",
+    "    if show:\n",
+    "        plt.show()\n",
+    "    return f\n",
+    "plotComplex(z);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "bdf11d92",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "z = eval(input(\"Enter list of complex numbers:\"))\n",
+    "def plotComplex(z,show = True):\n",
+    "    f = plt.figure()\n",
+    "    for i in z:\n",
+    "        plt.scatter(i.real,i.imag,label = f\"{i}\")\n",
+    "    plt.legend()\n",
+    "    plt.grid()\n",
+    "    plt.axhline(color = \"black\")\n",
+    "    plt.axvline(color = \"black\")\n",
+    "    plt.xlabel(\"Real\")\n",
+    "    plt.ylabel(\"Imaginary\")\n",
+    "    plt.title(\"Plot of Complex Numbers\")\n",
+    "    if show:\n",
+    "        plt.show()\n",
+    "    return f\n",
+    "#[2+6j, 1-4j,-3+4j, -2j, -2-1j]\n",
+    "plotComplex(z);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "c3e9bb83",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"tuple\" = (0,1)):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    \n",
+    "    \n",
+    "    return"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "c4d96861",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "help(\"tuple\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "675bd33e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "help(\"callable\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "e42f3ff5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"z\",z0 = 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "9c9bbbdd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"tuple\" = (0,1)):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    \n",
+    "    \n",
+    "    return True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "b3ca1169",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"z\",z0 = 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "f714b944",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"tuple\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    \n",
+    "    \n",
+    "    return True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "487c6f97",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"z\",z0 = 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "ad1171ea",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"Tuple\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    \n",
+    "    \n",
+    "    return True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "0b81194e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"z\",z0 = 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "4516115d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "help(\"tuple\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "e3d105d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "help(\"Tuple\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "70226ba9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "help(\"List\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "a35e8fee",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "help(\"list\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "bdc0c5bf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    \n",
+    "    \n",
+    "    return True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "884e10fa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"z\",z0 = 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "dbbf4d4d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def getLimit(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0 = 0):\n",
+    "    lim = sp.limit(f,z,z0)\n",
+    "    return complex(lim.simplify())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "f0027ff1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    \n",
+    "    \n",
+    "    return getLimit(f,z0 = z0[0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "fbde9a89",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"sin(z)\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "fe07d8dd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    plotComplex(limPoints,show)\n",
+    "    \n",
+    "    return getLimit(f,z0 = z0[0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "3f109178",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    f = plotComplex(limPoints,show=False)\n",
+    "    limit = complex(getLimit(f,z0 = z0[0]))\n",
+    "    plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "68b7850e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"sin(z)\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "5d7fb25d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    f = plotComplex(limPoints,show=False)\n",
+    "    limit = getLimit(f,z0 = z0[0])\n",
+    "    plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "475dabcd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"sin(z)\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "d7ca3fa3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    f = plotComplex(limPoints,show=False)\n",
+    "    #limit = getLimit(f,z0 = z0[0])\n",
+    "    #plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "576c245c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"sin(z)\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "b9cc4679",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "z = eval(input(\"Enter list of complex numbers:\"))\n",
+    "def plotComplex(z,show = True,legend = True):\n",
+    "    f = plt.figure()\n",
+    "    for i in z:\n",
+    "        plt.scatter(i.real,i.imag,label = f\"{i}\")\n",
+    "    if(legend):\n",
+    "        plt.legend()\n",
+    "    plt.grid()\n",
+    "    plt.axhline(color = \"black\")\n",
+    "    plt.axvline(color = \"black\")\n",
+    "    plt.xlabel(\"Real\")\n",
+    "    plt.ylabel(\"Imaginary\")\n",
+    "    plt.title(\"Plot of Complex Numbers\")\n",
+    "    if show:\n",
+    "        plt.show()\n",
+    "    return f\n",
+    "#[2+6j, 1-4j,-3+4j, -2j, -2-1j]\n",
+    "plotComplex(z);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "b3186262",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    f = plotComplex(limPoints,show=False,legend=False)\n",
+    "    #limit = getLimit(f,z0 = z0[0])\n",
+    "    #plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "7e60291c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = ())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "86679b42",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (0,1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "52fe4763",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (0.1,1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "9bce2eab",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    f = plotComplex(limPoints,show=False,legend=False)\n",
+    "    #limit = getLimit(f,z0 = z0[0])\n",
+    "    #plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "44c64fe8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (0.1,1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "718b1e63",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    f = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = z0[0])\n",
+    "    #plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "eafed534",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (0.1,1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "cf8de674",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def getLimit(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0 = 0):\n",
+    "    lim = sp.limit(f,z,z0)\n",
+    "    return complex(lim.simplify())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "b21f1bbb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = z0[0])\n",
+    "    #plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "89c3390a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (0.1,1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "b4dd7fc8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = z0[0])\n",
+    "    plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "690859cf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (0.1,1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "715c7ad0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = z0[0])\n",
+    "    plt.scatter(limit.real,limit.imag, label = f\"{f}\")\n",
+    "    plt.legend()\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "1f437a6e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (0.1,1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "7596188d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (0.1,1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "257a4187",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), z0:\"list\" = (0,1)):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(z0[0],z0[1],100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = z0[0])\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "6474e476",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (1+1j,0))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "ebdf8ece",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.linspace(1+1j,0,5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "4f54eee3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,100);\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "485f13d6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (1+1j,0))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "6b613c35",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.arrange(1+1j,0,5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "10207651",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.arange(1+1j,0,5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "ff9ecaf7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.arange(1+1j,0,(1+1j)/5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "f03ff3b1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.arange(1+1j,0,(1+1j)/10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "72344436",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.linspace(1+1j,0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "98441fda",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.linspace(1+1j,0,5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "8c7b0add",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.linspace(1+1j,0,5)[:-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "2b02ca4e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    assert len(z0) == 2\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,100)[:-1]\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "baadf89d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",z0 = (1+1j,0))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "266af74b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,100)[:-1]\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "86b3d2c4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=1+1j,zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "fee5ea09",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "76102089",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,5)[:-1]\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "9466e1e9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "d5706f3c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "z = eval(input(\"Enter list of complex numbers:\"))\n",
+    "def plotComplex(z,show = True,legend = True):\n",
+    "    f = plt.figure()\n",
+    "    for i in z:\n",
+    "        plt.scatter(i.real,i.imag)\n",
+    "    if(legend):\n",
+    "        plt.legend(z)\n",
+    "    plt.grid()\n",
+    "    plt.axhline(color = \"black\")\n",
+    "    plt.axvline(color = \"black\")\n",
+    "    plt.xlabel(\"Real\")\n",
+    "    plt.ylabel(\"Imaginary\")\n",
+    "    plt.title(\"Plot of Complex Numbers\")\n",
+    "    if show:\n",
+    "        plt.show()\n",
+    "    return f\n",
+    "#[2+6j, 1-4j,-3+4j, -2j, -2-1j]\n",
+    "plotComplex(z);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "5b266994",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,5)[:-1]\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.scatter([i.real for i in limPoints],[i.imag for i in limPoints],label = \"Limit Range\")\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "b06bbad2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,5)[:-1]\n",
+    "    limPoints = [func(i) for i in points]\n",
+    "    fig = plotComplex(limPoints,show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.scatter([i.real for i in limPoints],[i.imag for i in limPoints],label = \"Limit Range\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "de34c65c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "a7d6510b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,5)[:-1]\n",
+    "    fig = plotComplex([func[i] for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Range\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "ff53bb4b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "acf67a10",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,5)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Range\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "edaec704",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "id": "aa34a595",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Range\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "id": "c9a50f19",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "id": "77667590",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=complex(10,10),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "id": "8ae6b445",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "id": "dabd92d6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag)\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "2c11ae59",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "76a8e7ff",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "203a571d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "71590f3d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "8cc4d093",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],marker = '*',label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "fda8ccce",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "b965143e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,marker = '*',label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "488aadff",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "id": "67c30d1a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "id": "c680e587",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=complex(0,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "id": "3ff24707",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=5j,zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "id": "bd6f4fef",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=2j,zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "b488cfd0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=1j,zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "id": "6c94d93c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,marker = '*',size = 5,label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "id": "c9edda6e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "id": "b6db0d2b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,marker = '*',markersize = 5,label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "id": "d0f8a55d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "id": "45333222",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,marker = '*',s = 5,label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "id": "7c1ef342",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "id": "c5d4439d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,marker = '*',s = 10,label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "9241589a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "id": "e7c95eff",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,marker = '*',s = 50,label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "id": "3f1d8b7c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "id": "505b45bf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"1j*z**2/(z**2 + 1)\",zStart=1j,zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "id": "53ee9f3c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from cmath import *\n",
+    "import math\n",
+    "import numpy as np\n",
+    "import sympy as sp\n",
+    "import matplotlib.pyplot as plt\n",
+    "import ipywidgets as widgets\n",
+    "import random\n",
+    "%matplotlib notebook"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "id": "918e53b4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "id": "bf16e038",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def limitingPoints(f:\"sympy.Function\",z = sp.Symbol(\"z\"), zStart = 1,zLimit = 0):\n",
+    "    func = sp.lambdify(z,f,\"numpy\")\n",
+    "    points = np.linspace(zStart,zLimit,50)[:-1]\n",
+    "    fig = plotComplex([func(i) for i in points],show=False,legend=False)\n",
+    "    limit = getLimit(f,z0 = zLimit)\n",
+    "    plt.scatter(limit.real,limit.imag,marker = '*',s = 50,label =\"Limiting Point\")\n",
+    "    plt.scatter([i.real for i in points],[i.imag for i in points],label = \"Limit Input\")\n",
+    "    plt.legend()\n",
+    "    plt.title(f\"{f}\")\n",
+    "    plt.show()\n",
+    "    return "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "id": "82bd4a57",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "limitingPoints(\"(1/z) + 1j*(z-1)/z \",zStart=complex(1,1),zLimit=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "id": "6a375fb0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from cmath import *\n",
+    "import math\n",
+    "import numpy as np\n",
+    "import sympy as sp\n",
+    "import matplotlib.pyplot as plt\n",
+    "import ipywidgets as widgets\n",
+    "import random\n",
+    "%matplotlib interactive"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
